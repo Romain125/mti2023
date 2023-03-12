@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- Ce parent hérite lui-même de spring-boot-dependencies  -->
+    <!-- Cela nous permet de  :-->
+    <!-- 1 - Ne pas avoir à mettre de numéro de version (à condition que ce soit une librairie connue de l'écosystème Spring-boot)-->
+    <!-- 2 - D'être certain d'avoir des librairies compatibles entre elles (merci Spring!) -->
+    <!-- 3 - D'importer également les plugins maven liés à l'écosystème Spring -->
+    <!-- Si vous avez déjà un parent, ou que vous ne voulez pas utiliser de parent, vous pouvez remplacer (1) et (2) par un dependencyManagement (cf le bloc en commentaire un peu plus bas) -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.0.4</version>
+    </parent>
+
+    <artifactId>springweb</artifactId>
+    <description>Corrigé des exercices du cours sur Spring Web</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

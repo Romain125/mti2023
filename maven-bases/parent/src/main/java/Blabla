@@ -1,0 +1,1 @@
+Le parent peut contenir des classes mais elle seront ignorées puisque son packaging est forcément de type pom.

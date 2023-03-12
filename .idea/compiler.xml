@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring" />
+        <module name="untitled" />
+        <module name="enfant1" />
+        <module name="springweb" />
+        <module name="springjpa" />
+        <module name="enfant2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven" target="17" />
+      <module name="untitled" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="enfant1" options="" />
+      <module name="enfant2" options="" />
+      <module name="maven" options="-parameters" />
+      <module name="maven-bases" options="" />
+      <module name="parent" options="" />
+      <module name="spring" options="-parameters" />
+      <module name="springjpa" options="-parameters" />
+      <module name="springweb" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>
