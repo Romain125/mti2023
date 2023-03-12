@@ -17,16 +17,16 @@
         <relativePath/>
     </parent>
 
-    <artifactId>springjpa</artifactId>
+    <artifactId>springsecurity</artifactId>
 
-    <!-- Properties "standards" proposées par l'IDE à la création du projet, à ajuster avec votre version de java-->
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+
 
     </dependencies>
 
