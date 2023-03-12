@@ -14,10 +14,19 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.0.4</version>
+        <!-- Juste pour éviter un warning -->
+        <relativePath/>
     </parent>
 
     <artifactId>spring</artifactId>
     <description>Corrigé des exercices du cours sur les bases de Spring/Spring-boot</description>
+
+    <!-- Properties "standards" proposées par l'IDE à la création du projet, à ajuster avec votre version de java-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
     <dependencies>
 
@@ -38,6 +47,19 @@
 <!--            <artifactId>spring-boot-starter-web</artifactId>-->
 <!--        </dependency>-->
     </dependencies>
+
+    <!--    Bloc à utiliser si vous ne voulez/pouvez pas utiliser le parent -->
+    <!--    <dependencyManagement>
+            <dependencies>
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-dependencies</artifactId>
+                    <version>3.0.4</version>
+                    <scope>import</scope>
+                    <type>pom</type>
+                </dependency>
+            </dependencies>
+        </dependencyManagement>-->
 
     <build>
         <plugins>

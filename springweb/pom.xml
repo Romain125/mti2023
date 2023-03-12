@@ -13,10 +13,19 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.0.4</version>
+        <!-- Juste pour éviter un warning -->
+        <relativePath/>
     </parent>
 
     <artifactId>springweb</artifactId>
     <description>Corrigé des exercices du cours sur Spring Web</description>
+
+    <!-- Properties "standards" proposées par l'IDE à la création du projet, à ajuster avec votre version de java-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>

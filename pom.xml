@@ -12,33 +12,10 @@
     <!-- Ce pom sert d'orchestrateur ! -->
     <!-- notion à venir dans le second cours de maven -->
     <modules>
-        <module>springjpa</module>
-        <module>springweb</module>
-        <module>spring</module>
         <module>maven-bases</module>
+        <module>spring</module>
+        <module>springweb</module>
+        <module>springjpa</module>
     </modules>
-
-    <!-- Properties "standards" proposées par l'IDE à la création du projet, à ajuster avec votre version de java-->
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-<!--    Bloc à utiliser si vous ne voulez/pouvez pas utiliser le parent -->
-<!--    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>3.0.4</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>-->
-
-    <!-- Notez qu'il n'y a pas de dépendance dans le parent. Chaque enfant va gérer ses propres dépendances pour un soucis de clarté -->
-    <!-- Dans la vie réelle, on y met les dépendance communes à tous les sous-projets -->
 
 </project>

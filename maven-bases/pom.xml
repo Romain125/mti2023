@@ -15,10 +15,11 @@
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
+    <!-- Properties "standards" proposées par l'IDE à la création du projet, à ajuster avec votre version de java-->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <!-- Ne faites pas attention à ça pour le moment ! -->
